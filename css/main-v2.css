@@ -1,0 +1,10 @@
+/* ============================================================
+   MAIN CSS v2 - Importa todos os módulos para a variação dourada
+   ============================================================ */
+
+@import url('variables-v2.css');
+@import url('reset.css');
+@import url('layout.css');
+@import url('components.css');
+@import url('sections-v2.css');
+@import url('overrides-v2.css');

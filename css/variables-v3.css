@@ -1,0 +1,115 @@
+/* ============================================================
+   DESIGN TOKENS v3 - Paleta Navy / Ice Blue / Peach
+   #1B2A63 | #C9DEFE | #FDE4D1
+   ============================================================ */
+
+:root {
+  /* Cores principais - Azul gelo */
+  --color-primary: #C9DEFE;
+  --color-primary-hover: #a8c8f5;
+  --color-primary-light: #e0ecff;
+  --color-primary-glow: rgba(201, 222, 254, 0.35);
+
+  /* Cores de destaque/accent - Pêssego */
+  --color-accent: #FDE4D1;
+  --color-accent-hover: #f5ccac;
+
+  /* Fundos - Navy escuro */
+  --color-bg: #0a0f28;
+  --color-bg-elevated: #1B2A63;
+  --color-bg-card: #162155;
+  --color-bg-overlay: rgba(10, 15, 40, 0.7);
+
+  /* Texto */
+  --color-text: #ffffff;
+  --color-text-muted: #8b9fe0;
+  --color-text-dim: #5a6fa8;
+
+  /* Bordas */
+  --color-border: rgba(201, 222, 254, 0.1);
+  --color-border-hover: rgba(201, 222, 254, 0.2);
+
+  /* WhatsApp */
+  --color-whatsapp: #25d366;
+  --color-whatsapp-hover: #128c7e;
+
+  /* Gradientes */
+  --gradient-hero: linear-gradient(135deg, #0d1330 0%, #0a0f28 50%, #0a0f28 100%);
+  --gradient-blue-glow: radial-gradient(circle at 20% 30%, rgba(201, 222, 254, 0.1) 0%, transparent 50%);
+
+  /* Tipografia */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Tamanhos de fonte */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+
+  /* Espaçamento */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* Bordas arredondadas */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Sombras */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 30px var(--color-primary-glow);
+  --shadow-glow-strong: 0 0 60px var(--color-primary-glow);
+
+  /* Container */
+  --container-max: 1200px;
+  --container-padding: var(--space-6);
+
+  /* Transições */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+
+  /* Z-index */
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+}
+
+/* Responsivo: ajustes de tipografia em telas menores */
+@media (max-width: 768px) {
+  :root {
+    --text-5xl: 2.25rem;
+    --text-6xl: 3rem;
+    --container-padding: var(--space-4);
+  }
+}

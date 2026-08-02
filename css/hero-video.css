@@ -1,0 +1,208 @@
+/* ==========================================================
+   HERO VIDEO — Estilos do player no Hero
+   ========================================================== */
+
+/* ---------- Fundo com foto do Matheus ---------- */
+.hero-bg-photo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-bg-photo .placeholder-avatar {
+  width: 100%;
+  max-width: 520px;
+  height: 85%;
+  border: none;
+  border-radius: 0;
+  background: var(--color-bg-elevated, rgba(255,255,255,0.06));
+  opacity: 0.35;
+  font-size: 0.85rem;
+  position: relative;
+  z-index: 0;
+}
+
+/* Overlay gradiente para legibilidade do texto */
+.hero-bg-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 12, 28, 0.96) 0%,
+    rgba(8, 12, 28, 0.80) 35%,
+    rgba(8, 12, 28, 0.45) 60%,
+    rgba(8, 12, 28, 0.15) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* ---------- Wrapper do vídeo no hero ---------- */
+.hero-video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
+  background: #000;
+  aspect-ratio: 16 / 9;
+  cursor: pointer;
+  margin-top: 24px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.hero-video-wrapper:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 56px rgba(0, 0, 0, 0.40);
+}
+
+/* Vídeo em si — sem controles nativos */
+.hero-video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* ---------- Controles de play/pause ---------- */
+.hero-video-control {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.25s, transform 0.2s;
+}
+
+.hero-video-control:hover {
+  background: rgba(0, 0, 0, 0.7);
+  transform: scale(1.08);
+}
+
+/* Botão no hero */
+.hero-video-wrapper .hero-video-control {
+  bottom: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.hero-video-control svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* ==========================================================
+   MODO FULLSCREEN
+   ========================================================== */
+.hero-video-wrapper.is-fullscreen {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+  max-width: none;
+  z-index: 99999;
+  cursor: default;
+  margin-top: 0;
+}
+
+.hero-video-wrapper.is-fullscreen video {
+  object-fit: contain;
+}
+
+.hero-video-wrapper.is-fullscreen .hero-video-control {
+  bottom: 36px;
+  right: 36px;
+  width: 52px;
+  height: 52px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.hero-video-wrapper.is-fullscreen .hero-video-control svg {
+  width: 22px;
+  height: 22px;
+}
+
+.hero-video-wrapper.is-fullscreen.show-controls .hero-video-control,
+.hero-video-wrapper.is-fullscreen:hover .hero-video-control {
+  opacity: 1;
+}
+
+/* Overlay escuro sutil no fullscreen */
+.hero-video-wrapper.is-fullscreen::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 40%, rgba(0,0,0,0.6) 100%);
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.hero-video-wrapper.is-fullscreen.show-controls::before {
+  opacity: 1;
+}
+
+/* ==========================================================
+   RESPONSIVO
+   ========================================================== */
+@media (max-width: 768px) {
+  .hero-bg-photo::after {
+    background: linear-gradient(
+      180deg,
+      rgba(8, 12, 28, 0.92) 0%,
+      rgba(8, 12, 28, 0.70) 40%,
+      rgba(8, 12, 28, 0.35) 70%,
+      rgba(8, 12, 28, 0.20) 100%
+    );
+  }
+
+  .hero-bg-photo .placeholder-avatar {
+    max-width: 320px;
+    height: 75%;
+    opacity: 0.25;
+  }
+
+  .hero-visual {
+    display: flex !important;
+    justify-content: center;
+  }
+
+  .hero-video-wrapper {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+
+  .hero-video-wrapper.is-fullscreen .hero-video-control {
+    bottom: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+  }
+}

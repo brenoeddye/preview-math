@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hot Seat com Matheus Menezes — Mentoria Individual</title>
+  <meta name="description" content="60 minutos de mentoria individual com Matheus Menezes para destravar sua marca de moda.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main-v3.css">
+  <link rel="stylesheet" href="css/hero-video.css">
+  <style>
+    .version-nav { display:flex; align-items:center; gap:6px; margin-left:8px; padding-left:12px; border-left:1px solid rgba(255,255,255,.15); }
+    .version-nav .nav-version-label { font-size:11px; font-weight:700; color:#0ea5e9; background:rgba(14,165,233,.12); padding:2px 6px; border-radius:4px; letter-spacing:.05em; }
+    .version-nav a { font-size:11px; font-weight:600; color:rgba(255,255,255,.55); text-decoration:none; padding:2px 6px; border-radius:4px; transition:all .2s; }
+    .version-nav a:hover { color:#fff; background:rgba(255,255,255,.1); }
+    @media (max-width: 768px) { .version-nav { display:none; } }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#para-quem" class="nav-link">Para quem</a></li>
+        <li><a href="#hot-seat" class="nav-link">O Hot Seat</a></li>
+        <li><a href="#depoimentos" class="nav-link">Resultados</a></li>
+        <li><a href="#quem-e" class="nav-link">Sobre</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li class="version-nav">
+          <span class="nav-version-label">v3</span>
+          <a href="/">v1</a>
+          <a href="/index2.html">v2</a>
+          <a href="/index4.html">v4</a>
+        </li>
+      </ul>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==========================================================
+       HERO
+       ========================================================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-bg-photo">
+      <div class="placeholder placeholder-avatar">
+        <span>[Foto Matheus]</span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="heading-1">
+            Se você tem uma<br>
+            <span class="text-primary">marca ou é dono de loja,</span><br>
+            e sente que tá travado,<br>
+            eu entendo exatamente<br>
+            o que você tá vivendo.
+          </h1>
+          <p class="hero-sub">
+            Eu sou Matheus Menezes. Nasci dentro da confecção dos meus pais e hoje ajudo marcas a crescerem com estratégia, mix de produto inteligente e branding com propósito. Você não precisa de mais uma fórmula. Precisa de clareza, estrutura e direção.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#contato" class="btn btn-primary">Quero destravar minha marca agora</a>
+          </div>
+
+          <div class="hero-trust">
+            <div class="hero-trust-avatars">
+              <div class="trust-avatar"></div>
+              <div class="trust-avatar"></div>
+              <div class="trust-avatar"></div>
+              <div class="trust-avatar"></div>
+            </div>
+            <span>+50 marcas mentoradas · 4.9/5 avaliação média</span>
+          </div>
+        </div>
+        <!-- Vídeo Hero -->
+        <div class="hero-visual">
+          <div class="hero-video-wrapper" data-hero-video>
+            <!-- SUBSTITUA o src pelo vídeo real do Matheus -->
+            <video
+              src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+              poster=""
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+            ></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       PAIN POINTS
+       ========================================================== -->
+  <section class="section pain-points" id="para-quem">
+    <div class="container">
+      <div class="pain-header">
+        <h2>Se você se sente <span>assim</span>…</h2>
+      </div>
+      <div class="pain-grid">
+        <div class="pain-card">
+          <div class="pain-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3>Travado</h3>
+          <p>Tem estoque parado, posta todo dia e as vendas não acontecem.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3>Perdido</h3>
+          <p>Não sabe o que priorizar: preço, produto, marca ou anúncio.</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          </div>
+          <h3>Sozinho</h3>
+          <p>Ninguém na sua volta entende de moda ou de negócio pra te ajudar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       SOLUTION (O Hot Seat)
+       ========================================================== -->
+  <section class="section solution" id="hot-seat">
+    <div class="container">
+      <div class="solution-header">
+        <h2>O <span>Hot Seat</span> é o que falta.</h2>
+        <p>Um encontro de 60 minutos onde a gente olha pro seu negócio e desenha o próximo passo juntos.</p>
+      </div>
+      <div class="solution-grid">
+        <div class="solution-card">
+          <div class="solution-card-num">01</div>
+          <h3>Diagnóstico na lata</h3>
+          <p>Vou olhar sua marca, seu mix, seu preço e sua comunicação. Sem filtro. Sem enrolação.</p>
+        </div>
+        <div class="solution-card">
+          <div class="solution-card-num">02</div>
+          <h3>Plano de ação real</h3>
+          <p>Você sai com tarefas claras, prazos e prioridades. Nada de teoria que não dá pra aplicar.</p>
+        </div>
+        <div class="solution-card">
+          <div class="solution-card-num">03</div>
+          <h3>Replay pra sempre</h3>
+          <p>A gravação da sessão fica com você. Pode rever quantas vezes precisar.</p>
+        </div>
+      </div>
+      <div class="solution-cta">
+        <a href="#oferta" class="btn btn-primary btn-large">Quero minha sessão agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       SMARTPHONE NOTIFICATIONS
+       ========================================================== -->
+  <section class="section phone-section" id="notificacoes">
+    <div class="container">
+      <div class="phone-section-grid">
+        <div class="phone-section-content">
+          <h2>Isso pode ser <span>o seu celular</span>.</h2>
+          <p>Marca de moda que aplica o método certo venda todos os dias. Notificações de venda no site, DM no Instagram, WhatsApp bombando.</p>
+          <a href="#oferta" class="btn btn-primary">Quero vender todos os dias</a>
+        </div>
+        <div class="phone-section-visual">
+          <div class="phone-3d">
+            <div class="phone-frame">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="notifications-list" id="notificationsList">
+                  <div class="notification" data-index="0">
+                    <div class="notification-icon gmail">
+                      <svg viewBox="0 0 24 24" width="24" height="24"><path fill="#EA4335" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                    </div>
+                    <div class="notification-body">
+                      <div class="notification-title">Seu Site | Venda Realizada</div>
+                      <div class="notification-text">Venda Realizada!</div>
+                      <div class="notification-sub">Valor R$129,90</div>
+                    </div>
+                  </div>
+                  <div class="notification" data-index="1">
+                    <div class="notification-icon instagram">
+                      <svg viewBox="0 0 24 24" width="24" height="24"><defs><radialGradient id="ig1" cx="30%" cy="107%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><path fill="url(#ig1)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                    </div>
+                    <div class="notification-body">
+                      <div class="notification-title">[Seu.instagram] Seu.cliente</div>
+                      <div class="notification-text">Quando vai sair nova coleção?</div>
+                    </div>
+                  </div>
+                  <div class="notification" data-index="2">
+                    <div class="notification-icon whatsapp">
+                      <svg viewBox="0 0 24 24" width="24" height="24"><path fill="#25D366" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm6.04 13.88c-.26.73-1.51 1.48-2.11 1.57-.56.09-1.11.13-1.64-.1-.38-.17-.76-.32-1.12-.52-1.97-1.12-3.45-2.73-4.52-4.65-.51-.9-.96-1.84-1.07-2.88-.06-.56.1-1.12.43-1.57.16-.22.37-.37.63-.42.22-.04.45.01.63.15.32.24.58.56.78.9.16.27.28.56.34.87.03.15 0 .31-.09.44-.07.1-.17.18-.27.26-.09.07-.18.14-.26.22-.09.09-.18.19-.24.3-.1.17-.11.36-.04.54.27.66.65 1.26 1.13 1.79.58.64 1.27 1.17 2.03 1.56.17.09.35.12.53.06.15-.05.28-.14.4-.25.11-.1.21-.22.31-.33.2-.22.44-.4.72-.51.2-.08.4-.1.6-.05.28.07.54.2.77.38.25.2.48.42.69.66.21.24.4.49.55.77.14.26.16.54.04.81z"/></svg>
+                    </div>
+                    <div class="notification-body">
+                      <div class="notification-title">Lead em Negociação</div>
+                      <div class="notification-text">Quero comprar 5 camisetas!</div>
+                    </div>
+                  </div>
+                  <div class="notification" data-index="3">
+                    <div class="notification-icon gmail">
+                      <svg viewBox="0 0 24 24" width="24" height="24"><path fill="#EA4335" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+                    </div>
+                    <div class="notification-body">
+                      <div class="notification-title">Seu Site | Venda Realizada</div>
+                      <div class="notification-text">Venda Realizada!</div>
+                      <div class="notification-sub">Valor R$179,90</div>
+                    </div>
+                  </div>
+                  <div class="notification" data-index="4">
+                    <div class="notification-icon instagram">
+                      <svg viewBox="0 0 24 24" width="24" height="24"><defs><radialGradient id="ig2" cx="30%" cy="107%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><path fill="url(#ig2)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                    </div>
+                    <div class="notification-body">
+                      <div class="notification-title">[Seu.instagram] Nova Seguidora</div>
+                      <div class="notification-text">Amei suas peças! Tem pra atacado?</div>
+                    </div>
+                  </div>
+                  <div class="notification" data-index="5">
+                    <div class="notification-icon whatsapp">
+                      <svg viewBox="0 0 24 24" width="24" height="24"><path fill="#25D366" d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm6.04 13.88c-.26.73-1.51 1.48-2.11 1.57-.56.09-1.11.13-1.64-.1-.38-.17-.76-.32-1.12-.52-1.97-1.12-3.45-2.73-4.52-4.65-.51-.9-.96-1.84-1.07-2.88-.06-.56.1-1.12.43-1.57.16-.22.37-.37.63-.42.22-.04.45.01.63.15.32.24.58.56.78.9.16.27.28.56.34.87.03.15 0 .31-.09.44-.07.1-.17.18-.27.26-.09.07-.18.14-.26.22-.09.09-.18.19-.24.3-.1.17-.11.36-.04.54.27.66.65 1.26 1.13 1.79.58.64 1.27 1.17 2.03 1.56.17.09.35.12.53.06.15-.05.28-.14.4-.25.11-.1.21-.22.31-.33.2-.22.44-.4.72-.51.2-.08.4-.1.6-.05.28.07.54.2.77.38.25.2.48.42.69.66.21.24.4.49.55.77.14.26.16.54.04.81z"/></svg>
+                    </div>
+                    <div class="notification-body">
+                      <div class="notification-title">Lead em Negociação</div>
+                      <div class="notification-text">Consegue fazer 20 unidades com a minha logo?</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       TESTIMONIALS
+       ========================================================== -->
+  <section class="section testimonials" id="depoimentos">
+    <div class="container">
+      <div class="testimonials-header">
+        <h2>Quem entrou, <span>não arrependeu</span>.</h2>
+        <p>Depoimentos reais de quem já passou pelo Hot Seat.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card placeholder">
+          <span>[Print Depoimento 1]</span>
+        </div>
+        <div class="testimonial-card placeholder">
+          <span>[Print Depoimento 2]</span>
+        </div>
+        <div class="testimonial-card placeholder">
+          <span>[Print Depoimento 3]</span>
+        </div>
+        <div class="testimonial-card placeholder">
+          <span>[Print Depoimento 4]</span>
+        </div>
+        <div class="testimonial-card placeholder">
+          <span>[Print Depoimento 5]</span>
+        </div>
+        <div class="testimonial-card placeholder">
+          <span>[Print Depoimento 6]</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       ABOUT
+       ========================================================== -->
+  <section class="section about" id="quem-e">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-image placeholder">
+            <span>[Foto Matheus]</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <h2>Quem vai te<br><span>mentorar</span></h2>
+          <p class="about-bio">
+            Eu sou <strong>Matheus Menezes</strong>, dono da Urbô e já produzi para mais de <strong>1.000 marcas</strong>. Estou no chão de fábrica desde os 8 anos, fui reconhecido pelo Governo de Minas, me formei na <strong>Parsons em Nova York</strong> e já palestrei no E-commerce Brasil.
+          </p>
+          <p class="about-bio">
+            Mas o que importa é: <strong>eu já estive onde você está</strong>. E desenvolvi um método que funciona. Não teoria de slide. Estratégia de verdade.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Mentorias</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">1K+</div>
+              <div class="stat-label">Marcas</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">20+</div>
+              <div class="stat-label">Anos</div>
+            </div>
+          </div>
+          <a href="#oferta" class="btn btn-primary">Quero ser mentorado</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       INCLUDES
+       ========================================================== -->
+  <section class="section includes" id="inclui">
+    <div class="container">
+      <div class="includes-header">
+        <h2>O que <span>você recebe</span></h2>
+        <p>Tudo o que está incluso na sua sessão Hot Seat.</p>
+      </div>
+      <div class="includes-grid">
+        <div class="include-card">
+          <div class="include-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="include-text">
+            <h3>Sessão ao vivo</h3>
+            <p>60 minutos de atenção exclusiva via videoconferência.</p>
+          </div>
+        </div>
+        <div class="include-card">
+          <div class="include-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+          </div>
+          <div class="include-text">
+            <h3>Replay vitalício</h3>
+            <p>Gravação da sessão pra você rever quando quiser.</p>
+          </div>
+        </div>
+        <div class="include-card">
+          <div class="include-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <div class="include-text">
+            <h3>Plano de ação escrito</h3>
+            <p>Resumo das tarefas e prioridades no seu e-mail.</p>
+          </div>
+        </div>
+        <div class="include-card">
+          <div class="include-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg>
+          </div>
+          <div class="include-text">
+            <h3>Suporte por 7 dias</h3>
+            <p>Tire dúvidas rápidas por e-mail após a sessão.</p>
+          </div>
+        </div>
+      </div>
+      <div class="solution-cta">
+        <a href="#oferta" class="btn btn-primary btn-large">Garantir minha vaga</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       FAQ
+       ========================================================== -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <div class="faq-header">
+        <h2>Dúvidas?</h2>
+        <p>As perguntas mais comuns antes de reservar.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Como funciona a sessão?</span>
+            <div class="faq-icon"></div>
+          </button>
+          <div class="faq-answer">
+            <p>A gente marca um horário, entra em uma chamada de vídeo e eu analiso sua marca em tempo real. Você pode compartilhar tela, mostrar planilhas, site, Instagram — o que precisar. Em 60 minutos a gente define o próximo passo.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Preciso ter uma marca grande?</span>
+            <div class="faq-icon"></div>
+          </button>
+          <div class="faq-answer">
+            <p>Não. Já atendi quem tinha zero vendas e quem faturava 6 dígitos. O que importa é você querer crescer e estar disposto a executar.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>E se eu não gostar?</span>
+            <div class="faq-icon"></div>
+          </button>
+          <div class="faq-answer">
+            <p>Você tem 7 dias de garantia. Se achar que não valeu, devolvo 100% do valor. Sem questionamento.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Como pago?</span>
+            <div class="faq-icon"></div>
+          </button>
+          <div class="faq-answer">
+            <p>PIX, cartão (até 12x) ou boleto. Você escolhe na hora da reserva. Assim que confirmar, a gente marca o dia e horário.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CTA FINAL
+       ========================================================== -->
+  <section class="section cta-final" id="oferta">
+    <div class="container">
+      <div class="cta-final-content">
+        <div class="cta-badge">Vagas limitadas · Abril/2026</div>
+        <h2>
+          Uma hora pode mudar<br>os próximos <span>12 meses</span> da sua marca.
+        </h2>
+        <div class="cta-spots">
+          <span class="cta-spots-dot"></span>
+          <span><strong id="spotsLeft">Apenas 3 vagas</strong> disponíveis para abril</span>
+        </div>
+        <a href="#" class="cta-final-btn">
+          <span>Quero garantir minha vaga</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <div class="cta-guarantee">7 dias de garantia incondicional · 100% de devolução</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">&copy; 2026 Matheus Menezes. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- STICKY CTA -->
+  <div class="sticky-cta" id="stickyCta">
+    <div class="sticky-cta-inner">
+      <div class="sticky-cta-text">
+        <strong>Hot Seat com Matheus Menezes</strong> — 60 min de mentoria individual
+      </div>
+      <a href="#oferta" class="sticky-cta-btn">Garantir vaga</a>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="js/main-v3.js"></script>
+  <script src="js/hero-video.js"></script>
+</body>
+</html>
