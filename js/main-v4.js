@@ -224,6 +224,50 @@
   initHorizontalTimeline();
 
   /* ----------------------------------------------------------
+     COUNT-UP STATS
+     ---------------------------------------------------------- */
+  function initCountUpStats() {
+    const counters = document.querySelectorAll('[data-count]');
+    if (!counters.length) return;
+
+    const duration = 850;
+
+    function animate(counter) {
+      const target = Number(counter.dataset.count);
+      if (!Number.isFinite(target)) return;
+
+      const startTime = performance.now();
+      function tick(now) {
+        const progress = Math.min((now - startTime) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        counter.textContent = Math.round(target * eased).toLocaleString('pt-BR');
+
+        if (progress < 1) {
+          window.requestAnimationFrame(tick);
+        } else {
+          counter.textContent = target.toLocaleString('pt-BR');
+        }
+      }
+
+      window.requestAnimationFrame(tick);
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          animate(entry.target);
+          observer.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    counters.forEach((counter) => observer.observe(counter));
+  }
+  initCountUpStats();
+
+  /* ----------------------------------------------------------
      NAVBAR ACTIVE STATE
      ---------------------------------------------------------- */
   function initNavbarActive() {
