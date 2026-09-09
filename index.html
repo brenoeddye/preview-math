@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Consultoria para Marcas de Moda | Matheus Menezes</title>
   <meta name="description" content="Consultoria individual com Matheus Menezes para donos de lojas e marcas de moda que precisam diagnosticar travas em produto, coleção, produção, margem e posicionamento.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
@@ -17,13 +18,13 @@
       <a class="brand" href="#hero">Matheus Menezes</a>
       <ul class="nav-links">
         <li><a href="#porque" class="nav-link">Diagnóstico</a></li>
+        <li><a href="#historia" class="nav-link">História</a></li>
         <li><a href="#consultoria" class="nav-link">Consultoria</a></li>
         <li><a href="#para-quem" class="nav-link">Para quem</a></li>
-        <li><a href="#historia" class="nav-link">História</a></li>
         <li><a href="#avaliacoes" class="nav-link">Avaliações</a></li>
         <li><a href="#contato" class="nav-link">Contato</a></li>
       </ul>
-      <button class="nav-mobile-btn" id="navMobileBtn" aria-label="Abrir menu">
+      <button class="nav-mobile-btn" id="navMobileBtn" type="button" aria-label="Abrir menu" aria-controls="navDrawer" aria-expanded="false">
         <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
           <path d="M4 7h16"></path>
           <path d="M4 12h16"></path>
@@ -35,14 +36,14 @@
 
   <div class="nav-drawer" id="navDrawer">
     <div class="nav-drawer-panel">
-      <button class="nav-drawer-close" id="navDrawerClose" aria-label="Fechar">x</button>
       <div class="nav-drawer-links">
         <a href="#porque" class="nav-drawer-link">Diagnóstico</a>
+        <a href="#historia" class="nav-drawer-link">História</a>
         <a href="#consultoria" class="nav-drawer-link">Consultoria</a>
         <a href="#para-quem" class="nav-drawer-link">Para quem</a>
-        <a href="#historia" class="nav-drawer-link">História</a>
         <a href="#avaliacoes" class="nav-drawer-link">Avaliações</a>
         <a href="#contato" class="nav-drawer-link">Contato</a>
+        <a href="#contato" class="nav-drawer-cta">Quero falar sobre minha marca</a>
       </div>
     </div>
   </div>
@@ -53,6 +54,12 @@
       <a href="#contato" class="btn btn-primary">Quero descobrir o que está travando minha marca</a>
     </div>
   </div>
+
+  <a class="whatsapp-float" href="https://wa.me/5531995624227?text=Ol%C3%A1%2C%20eu%20quero%20entender%20melhor%20como%20eu%20posso%20destravar%20a%20minha%20marca%20e%20vender%20mais" target="_blank" rel="noopener noreferrer" aria-label="Falar com Matheus no WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <path d="M16.02 4.8c-6.08 0-11.03 4.94-11.03 11.02 0 2.1.6 4.14 1.72 5.9L4.88 28l6.43-1.68a11 11 0 0 0 4.71 1.06c6.08 0 11.02-4.94 11.02-11.02S22.1 4.8 16.02 4.8Zm0 20.7c-1.55 0-3.07-.37-4.43-1.08l-.32-.17-3.82 1 1.02-3.7-.2-.35a9.06 9.06 0 0 1-1.4-4.84c0-5.03 4.1-9.13 9.15-9.13 5.04 0 9.14 4.1 9.14 9.13 0 5.04-4.1 9.14-9.14 9.14Zm5.02-6.84c-.27-.14-1.63-.8-1.88-.9-.25-.09-.43-.14-.62.14-.18.27-.7.9-.86 1.08-.16.18-.32.2-.6.07-.27-.14-1.16-.43-2.2-1.36a8.2 8.2 0 0 1-1.53-1.9c-.16-.27-.02-.42.12-.56.13-.12.28-.32.42-.48.14-.16.18-.27.27-.45.1-.18.05-.34-.02-.48-.07-.14-.62-1.5-.85-2.06-.22-.53-.45-.46-.62-.47h-.53c-.18 0-.48.07-.73.34-.25.28-.96.94-.96 2.29s.98 2.65 1.12 2.83c.14.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.56.58.65.2 1.25.18 1.72.1.52-.08 1.63-.66 1.86-1.31.23-.64.23-1.2.16-1.31-.07-.12-.25-.18-.53-.32Z"></path>
+    </svg>
+  </a>
 
   <main>
     <section class="hero" id="hero">
@@ -125,37 +132,37 @@
           <h2>Vamos colocar o negócio na mesa e encontrar o gargalo.</h2>
           <p>A consultoria não parte de uma fórmula pronta. O trabalho é olhar para as decisões que sustentam a marca e entender o que precisa ser ajustado primeiro.</p>
         </div>
-        <div class="method-panel reveal reveal-delay-1">
-          <div class="method-panel-main">
+        <div class="method-panel">
+          <div class="method-panel-main reveal reveal-delay-1">
             <span>Diagnóstico individual</span>
             <h3>Produto, operação e marca no mesmo raciocínio.</h3>
             <p>O objetivo é sair da tentativa e erro com uma leitura prática do que está travando crescimento, margem, coleção ou percepção de valor.</p>
           </div>
           <div class="method-steps">
-            <article>
+            <article data-method-scroll-card>
               <span>01</span>
               <strong>Diagnóstico Inicial</strong>
-              <p>Neste momento o Matheus analisa cada detalhe da marca, produto, precificação, margem, percepcção de valor, branding, canais de venda e estratégia de mercado.</p>
+              <p>Neste momento o Matheus olha para a marca como um todo: produto, preço, margem, percepção de valor, canais de venda e estratégia de mercado.</p>
             </article>
-            <article>
+            <article data-method-scroll-card>
               <span>02</span>
               <strong>Planejamento e plano de ação emergencial</strong>
-              <p>De acordo com as informaçoes coletadas na primeira etapa, será construído um planejamento customizado, afinal, cada negócio está em uma fase e possui prioridades diferentes.</p>
+              <p>A partir do diagnóstico, você recebe um plano ajustado ao momento da marca, com prioridades claras para agir primeiro no que mais importa.</p>
             </article>
-            <article>
+            <article data-method-scroll-card>
               <span>03</span>
               <strong>Branding</strong>
-              <p>Matriz Personalidade, Matriz Concorrência, análise/definição de persona, Matriz Swot e Proposta de valor. São algumas das ferramentas aplicadas neste momento.</p>
+              <p>Aqui entram personalidade da marca, concorrência, público, proposta de valor e os pontos que precisam ficar mais claros na comunicação.</p>
             </article>
-            <article>
+            <article data-method-scroll-card>
               <span>04</span>
               <strong>Planejamento de Marketing</strong>
-              <p>Análise de redes sociais, calendário de ações, plano de mídias (quantitativo e qualitativo), frequência de postagens e plano de comunicação.</p>
+              <p>As redes sociais, o calendário de ações, a frequência de postagens e a comunicação são organizados para sustentar a estratégia da marca.</p>
             </article>
-            <article>
+            <article data-method-scroll-card>
               <span>05</span>
               <strong>Planejamento Comercial</strong>
-              <p>Este é o momento de analisarmos: Preço, Markup, margem de contribuição, canais de venda, liquidez e quais métricas são importantes para o seu negócio</p>
+              <p>Este é o momento de entender preço, margem, canais de venda, giro de produto e os números que realmente ajudam a tomar decisões melhores.</p>
             </article>
           </div>
         </div>
@@ -201,17 +208,17 @@
           <div class="about-stats">
             <div>
               <span>Marca</span>
-              <strong>+<span data-count="700">0</span></strong>
+              <strong>+<span data-count="700">700</span></strong>
               <small>lojistas atendidos</small>
             </div>
             <div>
               <span>Fábrica</span>
-              <strong>+<span data-count="300">0</span></strong>
+              <strong>+<span data-count="300">300</span></strong>
               <small>marcas produzidas</small>
             </div>
             <div>
               <span>Consultoria</span>
-              <strong>+<span data-count="50">0</span></strong>
+              <strong>+<span data-count="50">50</span></strong>
               <small>marcas atendidas</small>
             </div>
           </div>
@@ -268,21 +275,57 @@
       <div class="container">
         <div class="section-heading reveal">
           <div class="eyebrow">Avaliações</div>
-          <h2>Provas que devem mostrar diagnóstico, não elogio genérico.</h2>
+          <h2>O que muda quando a marca entende onde está travando.</h2>
         </div>
-        <div class="reviews-grid">
-          <article class="review-card reveal">
-            <div class="review-user"><span>A</span><div><strong>Nome + marca</strong><small>Marca de moda</small></div></div>
-            <p>“Eu achava que meu problema era vender mais. Na consultoria entendemos que a trava estava na coleção e na margem.”</p>
-          </article>
-          <article class="review-card reveal reveal-delay-1">
-            <div class="review-user"><span>B</span><div><strong>Nome + loja</strong><small>Dono de loja</small></div></div>
-            <p>“Entramos falando de fornecedor e saímos com clareza sobre mix, quantidade de compra e posicionamento da marca própria.”</p>
-          </article>
-          <article class="review-card reveal reveal-delay-2">
-            <div class="review-user"><span>C</span><div><strong>Nome + negócio</strong><small>Empreendedor</small></div></div>
-            <p>“O principal ganho foi descobrir o que corrigir primeiro, em vez de continuar testando anúncio, preço e coleção ao mesmo tempo.”</p>
-          </article>
+        <div class="reviews-phone-wrap reveal reveal-delay-1" data-ratings-carousel>
+          <div class="ratings-mega-viewport">
+            <div class="ratings-mega-track" data-ratings-track>
+              <figure class="ratings-mega-slide" data-rating-slide data-rating-key="0" aria-hidden="true">
+                <img src="images/ratings/1.webp" alt="">
+              </figure>
+              <figure class="ratings-mega-slide" data-rating-slide data-rating-key="1" aria-hidden="true">
+                <img src="images/ratings/2-1.webp" alt="">
+              </figure>
+              <figure class="ratings-mega-slide" data-rating-slide data-rating-key="2" aria-hidden="true">
+                <img src="images/ratings/2-2.webp" alt="">
+              </figure>
+              <figure class="ratings-mega-slide" data-rating-slide data-rating-key="0">
+                <img src="images/ratings/1.webp" alt="Avaliação de cliente 1" loading="lazy">
+              </figure>
+              <figure class="ratings-mega-slide" data-rating-slide data-rating-key="1">
+                <img src="images/ratings/2-1.webp" alt="Primeira imagem da avaliação de cliente 2" loading="lazy">
+              </figure>
+              <figure class="ratings-mega-slide" data-rating-slide data-rating-key="2">
+                <img src="images/ratings/2-2.webp" alt="Segunda imagem da avaliação de cliente 2" loading="lazy">
+              </figure>
+              <figure class="ratings-mega-slide" data-rating-slide data-rating-key="0" aria-hidden="true">
+                <img src="images/ratings/1.webp" alt="">
+              </figure>
+              <figure class="ratings-mega-slide" data-rating-slide data-rating-key="1" aria-hidden="true">
+                <img src="images/ratings/2-1.webp" alt="">
+              </figure>
+              <figure class="ratings-mega-slide" data-rating-slide data-rating-key="2" aria-hidden="true">
+                <img src="images/ratings/2-2.webp" alt="">
+              </figure>
+            </div>
+          </div>
+          <div class="iphone-mock" aria-hidden="true">
+            <div class="iphone-side-button iphone-side-button-left"></div>
+            <div class="iphone-side-button iphone-side-button-right"></div>
+            <div class="iphone-screen-frame"></div>
+            <div class="iphone-island"></div>
+          </div>
+          <button class="ratings-arrow ratings-arrow-prev" type="button" data-rating-prev aria-label="Avaliação anterior">
+            <span aria-hidden="true">&lt;</span>
+          </button>
+          <button class="ratings-arrow ratings-arrow-next" type="button" data-rating-next aria-label="Próxima avaliação">
+            <span aria-hidden="true">&gt;</span>
+          </button>
+          <div class="ratings-carousel-controls" aria-label="Navegação das avaliações">
+            <button type="button" class="ratings-dot active" data-rating-dot aria-label="Ver avaliação 1"></button>
+            <button type="button" class="ratings-dot" data-rating-dot aria-label="Ver avaliação 2, imagem 1 de 2"></button>
+            <button type="button" class="ratings-dot" data-rating-dot aria-label="Ver avaliação 2, imagem 2 de 2"></button>
+          </div>
         </div>
       </div>
     </section>
@@ -304,8 +347,8 @@
             <li><strong>Ordem de prioridade</strong><br>Você sai sabendo o que precisa ser corrigido primeiro e o que pode esperar.</li>
             <li><strong>Visão dos dois lados</strong><br>A análise de quem já esteve na posição de dono de marca e hoje também conhece o bastidor da indústria.</li>
           </ul>
-          <a class="btn btn-primary final-cta" href="https://pay.kiwify.com.br/SEU-LINK-AQUI" target="_blank" rel="noopener noreferrer">Quero identificar o que está travando minha marca</a>
-          <p class="final-note">Você será redirecionado para a página oficial da consultoria na Kiwify.</p>
+          <a class="btn btn-primary final-cta" href="https://wa.me/5531995624227?text=Ol%C3%A1%2C%20eu%20quero%20entender%20melhor%20como%20eu%20posso%20destravar%20a%20minha%20marca%20e%20vender%20mais" target="_blank" rel="noopener noreferrer">Quero identificar o que está travando minha marca</a>
+          <p class="final-note">Você será direcionado para uma conversa no WhatsApp.</p>
         </div>
       </div>
     </section>
