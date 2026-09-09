@@ -303,10 +303,34 @@ main > .opportunity-section { order: 9; }
   .fit-strip > span { grid-column: 1 / -1; border-right: 0; border-bottom: 1px solid var(--color-border); }
   .fit-strip p:nth-child(odd) { border-right: 0; }
   .timeline-scroll { height: auto; }
-  .timeline-pin { position: relative; min-height: auto; padding: clamp(76px, 9vw, 126px) 0; overflow: visible; }
+  /*
+   * On small screens the timeline is a regular section. The pinned,
+   * horizontal treatment and reveal animation make the cards overlap while
+   * the section is being entered, especially on mobile browsers.
+   */
+  .timeline-scroll,
+  .timeline-pin,
+  .timeline-layout,
+  .timeline-horizontal,
+  .timeline-track,
+  .timeline-card,
+  .timeline-intro {
+    position: static;
+    height: auto;
+    min-height: 0;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+    will-change: auto;
+  }
+  .timeline-scroll { height: auto !important; overflow: visible; }
+  .timeline-pin { padding: clamp(76px, 9vw, 126px) 0; overflow: visible; }
+  .timeline-layout { display: block; }
+  .timeline-intro { opacity: 1 !important; margin-bottom: 34px; }
+  .timeline-horizontal { overflow: visible; }
   .timeline-progress { display: none; }
-  .timeline-track { width: auto; display: grid; grid-template-columns: repeat(2, 1fr); transform: none !important; }
-  .timeline-card { width: auto; min-height: 300px; }
+  .timeline-track { width: 100%; display: grid; grid-template-columns: 1fr; gap: 14px; }
+  .timeline-card { width: 100%; opacity: 1 !important; padding: 26px; }
   .reviews-phone-wrap { --phone-width: clamp(250px, 38vw, 320px); --carousel-gap: clamp(20px, 5vw, 48px); }
 }
 
